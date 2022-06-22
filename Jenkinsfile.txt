@@ -32,7 +32,7 @@ pipeline {
 		stage('API Test') {
             steps {
 				//Change git url below as per your forked github repository URL
-				git url: 'https://github.com/umangsaltuniv/EMAPITests-ex.git'
+				git url: 'https://github.com/ashett13/EMAPITests-ex.git'
             	sh 'mvn -Dtest=ExpenseManagerAPITest test'
             }
         }
@@ -43,7 +43,7 @@ pipeline {
 		stage('System Test') {
             steps {
 				//Change git url below as per your forked github repository URL
-				git url: 'https://github.com/umangsaltuniv/EMSystemTests-ex.git'
+				git url: 'https://github.com/ashett13/EMSystemTests-ex.git'
             	sh 'mvn -Dtest=ExpenseManagerSystemTest test'
             }
         }
@@ -54,7 +54,7 @@ pipeline {
 		stage('BDD Test') {
             steps {
 				//Change git url below as per your forked github repository URL
-				git url: 'https://github.com/umangsaltuniv/EMSystemTests_BDD.git'
+				git url: 'https://github.com/ashett13/EMSystemTests_BDD.git'
             	sh 'mvn -Dtest=TestRunner test'
             }
         }
